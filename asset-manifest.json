@@ -3,8 +3,8 @@
     "static/js/0.13594c1a.chunk.js": "/google-album/static/js/0.13594c1a.chunk.js",
     "static/js/0.13594c1a.chunk.js.map": "/google-album/static/js/0.13594c1a.chunk.js.map",
     "main.css": "/google-album/static/css/main.8d14f97a.chunk.css",
-    "main.js": "/google-album/static/js/main.36c98453.chunk.js",
-    "main.js.map": "/google-album/static/js/main.36c98453.chunk.js.map",
+    "main.js": "/google-album/static/js/main.cd883aad.chunk.js",
+    "main.js.map": "/google-album/static/js/main.cd883aad.chunk.js.map",
     "runtime-main.js": "/google-album/static/js/runtime-main.d17dc3f9.js",
     "runtime-main.js.map": "/google-album/static/js/runtime-main.d17dc3f9.js.map",
     "static/js/3.675f117f.chunk.js": "/google-album/static/js/3.675f117f.chunk.js",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.d17dc3f9.js",
     "static/js/3.675f117f.chunk.js",
     "static/css/main.8d14f97a.chunk.css",
-    "static/js/main.36c98453.chunk.js"
+    "static/js/main.cd883aad.chunk.js"
   ]
 }
