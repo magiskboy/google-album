@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useSprings, animated, interpolate } from "react-spring";
 import { useGesture } from "react-use-gesture";
 import { useListPhotoInAlbum } from "../../hooks";
@@ -29,6 +29,8 @@ export default function Album() {
     from: from(i),
   })); // Create a bunch of springs using the helpers above
   // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
+  //
+
   const bind = useGesture(
     ({
       args: [index],
@@ -40,7 +42,9 @@ export default function Album() {
     }) => {
       const trigger = velocity > 0.2; // If you flick hard enough it should trigger the card to fly out
       const dir = xDir < 0 ? -1 : 1; // Direction should either point left or right
-      if (!down && trigger) gone.add(index); // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
+      if (!down && trigger) {
+        gone.add(index);
+      } // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
       set((i) => {
         if (index !== i) return; // We're only interested in changing spring-data for the current spring
         const isGone = gone.has(index);
@@ -65,8 +69,8 @@ export default function Album() {
   const availWidth = Math.min(window.screen.availWidth, 600);
 
   // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
-  return props.map(({ x, y, rot, scale }, i) => {
-    const { width, height } = photos[i].mediaMetadata;
+  const images = props.map(({ x, y, rot, scale }, i) => {
+    let { width, height } = photos[i].mediaMetadata;
     const isHor = width > height;
     const isMobile = window.screen.availWidth < 660;
     const style = {
@@ -104,4 +108,19 @@ export default function Album() {
       </animated.div>
     );
   });
+
+  return (
+    <div className="Album BackApp">
+      <div className="bg"></div>
+      <div
+        className="BackButton"
+        onClick={() => {
+          setPage("home");
+        }}
+      >
+        Back
+      </div>
+      <div className="StackPhoto">{images}</div>
+    </div>
+  );
 }

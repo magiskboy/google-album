@@ -1,36 +1,41 @@
-@keyframes move {
-  0%   { left: 0; top: 0; }
-  25%  { left: 20%; top: 25vh; }
-  50%  { left: 40%; top: 50vh; }
-  75%  { left: 80%; top: 75vh; }
-  100% { left: 99%; top: 100vh }
-}
+.Home {
+  .bg {
+    background-image: url('../../assets/images/bg-1.jpg');
+  }
 
-.Home  {
-  padding: 0;
-  .background{
-    overflow: hidden;
+  .AppHeader {
     position: absolute;
-    top: 0;
-    width: 20%;
-    animation-name: move;
-    animation-duration: 4s;
+    text-align: center;
+    font-size: 64px;
+    width: 100%;
+    margin-top: 5px;
+  }
 
-    img {
-      width: 100%;
+  .ListAlbum {
+    position: absolute;
+
+    div {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      will-change: transform;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      div {
+        background-color: #fff9eb;
+        background-size: auto 85%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 45vh;
+        max-width: 300px;
+        height: 85vh;
+        max-height: 570px;
+        will-change: transform;
+        border-radius: 10px;
+        box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
+      }
     }
   }
-
-  .foreground {
-    position: absolute;
-  }
-}
-
-.ListAlbum {
-  border: 1px solid red;
-  width: 80%;
-
-  img {
-    position: absolute;
-  } 
 }

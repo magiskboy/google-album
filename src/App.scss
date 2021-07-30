@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Indie Flower";
+  src: url(../src/assets/fonts/IndieFlower-Regular.ttf);
+}
+
+* {
+  font-family: "Indie Flower";
+}
+
+.BackApp {
+  .bg {
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      background-color: #ffefc9;
+      background-position: center 70%;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      filter: blur(2px);
+    }
+}

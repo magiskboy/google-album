@@ -1,5 +1,6 @@
 import React, { useState, Suspense } from "react";
 import { PageContext, AuthContext } from "./contexts";
+import "./App.scss";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const Login = React.lazy(() => import("./pages/Login"));
