@@ -1,0 +1,34 @@
+{
+  "files": {
+    "static/js/0.13594c1a.chunk.js": "/google-album/static/js/0.13594c1a.chunk.js",
+    "static/js/0.13594c1a.chunk.js.map": "/google-album/static/js/0.13594c1a.chunk.js.map",
+    "main.css": "/google-album/static/css/main.8d14f97a.chunk.css",
+    "main.js": "/google-album/static/js/main.36c98453.chunk.js",
+    "main.js.map": "/google-album/static/js/main.36c98453.chunk.js.map",
+    "runtime-main.js": "/google-album/static/js/runtime-main.641bbbe5.js",
+    "runtime-main.js.map": "/google-album/static/js/runtime-main.641bbbe5.js.map",
+    "static/js/3.675f117f.chunk.js": "/google-album/static/js/3.675f117f.chunk.js",
+    "static/js/3.675f117f.chunk.js.map": "/google-album/static/js/3.675f117f.chunk.js.map",
+    "static/css/4.fb193d0c.chunk.css": "/google-album/static/css/4.fb193d0c.chunk.css",
+    "static/js/4.5bac3adf.chunk.js": "/google-album/static/js/4.5bac3adf.chunk.js",
+    "static/js/4.5bac3adf.chunk.js.map": "/google-album/static/js/4.5bac3adf.chunk.js.map",
+    "static/css/5.440987fe.chunk.css": "/google-album/static/css/5.440987fe.chunk.css",
+    "static/js/5.f5312570.chunk.js": "/google-album/static/js/5.f5312570.chunk.js",
+    "static/js/5.f5312570.chunk.js.map": "/google-album/static/js/5.f5312570.chunk.js.map",
+    "static/js/6.7f822de1.chunk.js": "/google-album/static/js/6.7f822de1.chunk.js",
+    "static/js/6.7f822de1.chunk.js.map": "/google-album/static/js/6.7f822de1.chunk.js.map",
+    "index.html": "/google-album/index.html",
+    "static/css/4.fb193d0c.chunk.css.map": "/google-album/static/css/4.fb193d0c.chunk.css.map",
+    "static/css/5.440987fe.chunk.css.map": "/google-album/static/css/5.440987fe.chunk.css.map",
+    "static/css/main.8d14f97a.chunk.css.map": "/google-album/static/css/main.8d14f97a.chunk.css.map",
+    "static/js/3.675f117f.chunk.js.LICENSE.txt": "/google-album/static/js/3.675f117f.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/google-album/static/media/IndieFlower-Regular.9bd64a34.ttf",
+    "static/media/style.scss": "/google-album/static/media/bg-2.079f6473.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.641bbbe5.js",
+    "static/js/3.675f117f.chunk.js",
+    "static/css/main.8d14f97a.chunk.css",
+    "static/js/main.36c98453.chunk.js"
+  ]
+}

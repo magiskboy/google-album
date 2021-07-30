@@ -1,0 +1,2 @@
+(this.webpackJsonpalbum=this.webpackJsonpalbum||[]).push([[6],{45:function(n,t,u){"use strict";u.r(t),u.d(t,"default",(function(){return e}));var c=u(1);function e(){return Object(c.jsx)("h1",{children:"Login"})}}}]);
+//# sourceMappingURL=6.7f822de1.chunk.js.map
