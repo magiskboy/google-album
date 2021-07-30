@@ -1,0 +1,36 @@
+@keyframes move {
+  0%   { left: 0; top: 0; }
+  25%  { left: 20%; top: 25vh; }
+  50%  { left: 40%; top: 50vh; }
+  75%  { left: 80%; top: 75vh; }
+  100% { left: 99%; top: 100vh }
+}
+
+.Home  {
+  padding: 0;
+  .background{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    animation-name: move;
+    animation-duration: 4s;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .foreground {
+    position: absolute;
+  }
+}
+
+.ListAlbum {
+  border: 1px solid red;
+  width: 80%;
+
+  img {
+    position: absolute;
+  } 
+}
