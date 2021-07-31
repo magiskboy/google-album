@@ -1,0 +1,16 @@
+.Button{
+  display: block;
+  background-color: #fff9eb;
+  color: #916600;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 7px;
+  opacity: 0.3;
+  transition: opacity .3s;
+  border: 0;
+  font-size: 14px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

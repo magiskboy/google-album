@@ -1,6 +1,6 @@
 export class GooglePhotoClient {
-  constructor(tokenObj) {
-    this.token = `${tokenObj.token_type} ${tokenObj.access_token}`;
+  constructor(token) {
+    this.token = token;
   }
 
   async getListAlbums(pageSize = 10, nextPageToken = null) {
@@ -16,7 +16,7 @@ export class GooglePhotoClient {
     });
 
     if (resp.status !== 200) {
-      throw new Error("Fail to load list albums");
+      throw new Error(`${resp.status}: Fail to load list albums`);
     }
     const data = await resp.json();
     return data;
@@ -37,7 +37,7 @@ export class GooglePhotoClient {
       body: JSON.stringify(bodyParams),
     });
     if (resp.status !== 200) {
-      throw new Error("Fail to load list photo in the album");
+      throw new Error(`${resp.status}: Fail to load list photo in the album`);
     }
     const data = await resp.json();
     return data;

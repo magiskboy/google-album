@@ -1,48 +1,8 @@
 .Album {
-  .bg {
-    background-image: url('../../assets/images/bg-2.jpg');
-  }
-
-
   .BackButton {
     position: absolute;
     top: 10px;
     left: 20px;
-    background-color: #fff9eb;
-    color: #916600;
-    font-weight: 500;
-    padding: 10px 15px;
-    border-radius: 7px;
     z-index: 100;
-    opacity: 0.3;
-    transition: opacity .3s;
-
-    &:hover {
-      opacity: 0.9;
-    }
-  }
-}
-
-.StackPhoto > div {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  will-change: transform;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  div {
-    background-color: #fff9eb;
-    background-size: auto 85%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 45vh;
-    max-width: 300px;
-    height: 85vh;
-    max-height: 570px;
-    will-change: transform;
-    border-radius: 10px;
-    box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
   }
 }
