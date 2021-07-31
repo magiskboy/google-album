@@ -1,27 +1,27 @@
 {
   "files": {
-    "static/js/0.a6fa7ed2.chunk.js": "/google-album/static/js/0.a6fa7ed2.chunk.js",
-    "static/js/0.a6fa7ed2.chunk.js.map": "/google-album/static/js/0.a6fa7ed2.chunk.js.map",
+    "static/js/0.b44e78c4.chunk.js": "/google-album/static/js/0.b44e78c4.chunk.js",
+    "static/js/0.b44e78c4.chunk.js.map": "/google-album/static/js/0.b44e78c4.chunk.js.map",
     "main.css": "/google-album/static/css/main.63b59088.chunk.css",
-    "main.js": "/google-album/static/js/main.f0915872.chunk.js",
-    "main.js.map": "/google-album/static/js/main.f0915872.chunk.js.map",
-    "runtime-main.js": "/google-album/static/js/runtime-main.73c25aa9.js",
-    "runtime-main.js.map": "/google-album/static/js/runtime-main.73c25aa9.js.map",
-    "static/js/3.bf4a4aeb.chunk.js": "/google-album/static/js/3.bf4a4aeb.chunk.js",
-    "static/js/3.bf4a4aeb.chunk.js.map": "/google-album/static/js/3.bf4a4aeb.chunk.js.map",
+    "main.js": "/google-album/static/js/main.0c9911da.chunk.js",
+    "main.js.map": "/google-album/static/js/main.0c9911da.chunk.js.map",
+    "runtime-main.js": "/google-album/static/js/runtime-main.faf7b286.js",
+    "runtime-main.js.map": "/google-album/static/js/runtime-main.faf7b286.js.map",
+    "static/js/3.05ded2c1.chunk.js": "/google-album/static/js/3.05ded2c1.chunk.js",
+    "static/js/3.05ded2c1.chunk.js.map": "/google-album/static/js/3.05ded2c1.chunk.js.map",
     "static/css/4.b59a6237.chunk.css": "/google-album/static/css/4.b59a6237.chunk.css",
-    "static/js/4.4a701c50.chunk.js": "/google-album/static/js/4.4a701c50.chunk.js",
-    "static/js/4.4a701c50.chunk.js.map": "/google-album/static/js/4.4a701c50.chunk.js.map",
+    "static/js/4.af636489.chunk.js": "/google-album/static/js/4.af636489.chunk.js",
+    "static/js/4.af636489.chunk.js.map": "/google-album/static/js/4.af636489.chunk.js.map",
     "static/css/5.47dedb8a.chunk.css": "/google-album/static/css/5.47dedb8a.chunk.css",
-    "static/js/5.19df57bd.chunk.js": "/google-album/static/js/5.19df57bd.chunk.js",
-    "static/js/5.19df57bd.chunk.js.map": "/google-album/static/js/5.19df57bd.chunk.js.map",
+    "static/js/5.b82e7ea7.chunk.js": "/google-album/static/js/5.b82e7ea7.chunk.js",
+    "static/js/5.b82e7ea7.chunk.js.map": "/google-album/static/js/5.b82e7ea7.chunk.js.map",
     "static/js/6.199d0f84.chunk.js": "/google-album/static/js/6.199d0f84.chunk.js",
     "static/js/6.199d0f84.chunk.js.map": "/google-album/static/js/6.199d0f84.chunk.js.map",
     "index.html": "/google-album/index.html",
     "static/css/4.b59a6237.chunk.css.map": "/google-album/static/css/4.b59a6237.chunk.css.map",
     "static/css/5.47dedb8a.chunk.css.map": "/google-album/static/css/5.47dedb8a.chunk.css.map",
     "static/css/main.63b59088.chunk.css.map": "/google-album/static/css/main.63b59088.chunk.css.map",
-    "static/js/3.bf4a4aeb.chunk.js.LICENSE.txt": "/google-album/static/js/3.bf4a4aeb.chunk.js.LICENSE.txt",
+    "static/js/3.05ded2c1.chunk.js.LICENSE.txt": "/google-album/static/js/3.05ded2c1.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/google-album/static/media/IndieFlower-Regular.9bd64a34.ttf",
     "static/media/bg-1-desktop.c8449dda.jpg": "/google-album/static/media/bg-1-desktop.c8449dda.jpg",
     "static/media/bg-1-mobile.7aedae24.jpg": "/google-album/static/media/bg-1-mobile.7aedae24.jpg",
@@ -29,9 +29,9 @@
     "static/media/bg-2-mobile.f3cb29fc.jpg": "/google-album/static/media/bg-2-mobile.f3cb29fc.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.73c25aa9.js",
-    "static/js/3.bf4a4aeb.chunk.js",
+    "static/js/runtime-main.faf7b286.js",
+    "static/js/3.05ded2c1.chunk.js",
     "static/css/main.63b59088.chunk.css",
-    "static/js/main.f0915872.chunk.js"
+    "static/js/main.0c9911da.chunk.js"
   ]
 }
