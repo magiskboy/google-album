@@ -5,10 +5,11 @@
   font-weight: 500;
   padding: 8px 14px;
   border-radius: 7px;
-  opacity: 0.3;
+  opacity: 0.5;
   transition: opacity .3s;
   border: 0;
   font-size: 14px;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.9;

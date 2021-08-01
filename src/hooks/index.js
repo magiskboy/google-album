@@ -9,18 +9,12 @@ export function useListAlbums(pageSize = 10) {
 
   const fetchNext = useCallback(async () => {
     if (auth) {
-      const client = new GooglePhotoClient(
-        `${auth.token_type} ${auth.access_token}`
+      const client = new GooglePhotoClient(auth, authReload);
+      const data = await client.invoke(
+        "getListAlbums",
+        pageSize,
+        nextPageToken
       );
-      let data;
-      try {
-        data = await client.getListAlbums(pageSize, nextPageToken);
-      } catch (e) {
-        if (e.message.startsWith("401")) {
-          await authReload();
-          data = await client.getListAlbums(pageSize, nextPageToken);
-        }
-      }
       setNextPageToken(data?.nextPageToken);
       setAlbums(data?.albums);
     }
@@ -31,37 +25,6 @@ export function useListAlbums(pageSize = 10) {
   }, [auth]);
 
   return { albums, fetchNext };
-}
-
-export function useListPhotoInAlbum(albumId, pageSize = 10) {
-  const [photos, setPhotos] = useState([]);
-  const [nextPageToken, setNextPageToken] = useState();
-  const { auth, authReload } = useAuth();
-
-  const fetchNext = useCallback(async () => {
-    if (auth) {
-      const client = new GooglePhotoClient(
-        `${auth.token_type} ${auth.access_token}`
-      );
-      let data;
-      try {
-        data = await client.getPhotoInAlbum(albumId, pageSize, nextPageToken);
-      } catch (e) {
-        if (e.message.startsWith("401")) {
-          await authReload();
-          data = await client.getPhotoInAlbum(albumId, pageSize, nextPageToken);
-        }
-      }
-      setNextPageToken(data?.nextPageToken);
-      setPhotos(data?.mediaItems);
-    }
-  }, [auth, albumId, authReload, nextPageToken, pageSize]);
-
-  useEffect(() => {
-    fetchNext();
-  }, [auth]);
-
-  return { photos, fetchNext };
 }
 
 export function useDeviceInfo() {

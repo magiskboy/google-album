@@ -21,6 +21,7 @@ export default function StackPaper({
   onNext,
   onClickItem,
   onPushoutItem,
+  onClick,
 }) {
   const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
   const [props, set] = useSprings(papers.length, (i) => ({
@@ -90,6 +91,7 @@ export default function StackPaper({
             (x, y) => `translate3d(${x}px,${y}px,0)`
           ),
         }}
+        onClick={onClick}
       >
         <animated.div
           {...bind(i)}
@@ -110,5 +112,9 @@ export default function StackPaper({
     );
   });
 
-  return <div className="StackPaper">{images}</div>;
+  return (
+    <div className="StackPaper" onClick={onClick}>
+      {images}
+    </div>
+  );
 }

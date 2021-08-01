@@ -1,8 +1,49 @@
 .Home {
-  .LogoutButton {
+  .ShowAlbumMenuButton {
     position: absolute;
     top: 10px;
     left: 20px;
-    z-index: 100;
+    z-index: 5;
+  }
+
+  .MenuAlbum {
+    position: absolute;
+    z-index: 10;
+    transition: transform .4s ease-in-out, opacity .6s ease-in-out;
+
+    .AlbumList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .AlbumItem {
+        font-size: 18px;
+        padding: 8px;
+        width: 280px;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        transition: background-color .1s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #C8A165;
+        }
+      }
+
+
+    }
+  }
+
+  .MenuAlbum.Show {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  .MenuAlbum.Hidden {
+    transform: translate(-100%, 0);
+    opacity: 0;
   }
 }

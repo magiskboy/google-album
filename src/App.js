@@ -3,13 +3,7 @@ import { PageContext, AuthContext, GOOGLE_AUTH_RESPONSE_KEY } from "./contexts";
 import "./App.scss";
 
 const Home = React.lazy(() => import("./pages/Home"));
-const Login = React.lazy(() => import("./pages/Login"));
-const Album = React.lazy(() => import("./pages/Album"));
-const pages = new Map([
-  ["home", Home],
-  ["login", Login],
-  ["album", Album],
-]);
+const pages = new Map([["home", Home]]);
 
 const DEFAULT_PAGE = "home";
 
